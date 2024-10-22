@@ -1,29 +1,72 @@
-body{background-color: rgb(36, 37, 37);
-    color: rgb(181, 174, 162);
-    height: 3000px;}
-    
-    header ul{list-style: none;
-        width: 100%;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        font-weight: 100;
-        font-family: "Merriweather", serif;
-        
-    }
-    header{
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{background-color: #28334a;
+  color: rgb(232 229 226);
+  font-family:"Suisseintl" , sans-serif;}
+
+#header{list-style: none;
     width: 100%;
+    padding: 0;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    align-items: center;
+    font-weight: 600;
     position: sticky;
-    top: 12px;
-    }
-    
-    section h1{
-    padding-left: 15%;
-    font-size: 30px;
-    font-family: "Merriweather", serif;    font-weight: normal;
-      font-style: normal;}
-    ul a{
-        color: #e8e5d6;
-    }
-    section{padding-top: 50px;}
+  height: 50px;
+z-index: 99;
+background-color: rgba(0, 0, 0, 0.3);}
+#header a{color: rgb(245 250 255);}
+section{
+top: 100px;}
+.sname{
+font-size: 30px;
+font-weight: 200;
+width: 330px;
+margin: 0;
+align-content: center;
+}
+.snametwo{color: rgb(255 201 0);
+  padding-top: 200px;
+  font-size: 3.5em;
+  font-weight: 500;
+text-align: center;}
+#lflex{display: flex;
+flex-direction: row;   
+justify-content: center;
+padding-top: 100px;
+gap: 180px;
+}
+#lflex img{width: 300px;}
+#contactsvg svg{height: 40px;
+fill: rgb(255 201 0);}
+.snametree{font-size: 1.6em;
+font-weight: 600;}
+#projects ul{list-style: none;}
+#projects a{color: rgb(255 201 0);}
+#projects{text-align: center;}
+#contact{text-align: center;
+padding-top: 300px;}
+.yellowtext{margin-top: 70px;}
+#contactsvg ul{display: flex;
+text-align: center;
+list-style: none;
+justify-content: center;
+gap: 50px;}
+input {border-radius: 40px;
+height: 25px;
+width: 260px;}
+button{height: 35px;
+width: 130px;
+border-radius: 13px;
+background-color:rgb(255 201 0);
+border: none;}
+#skills {padding-left: 15%;}
+form{text-align: left;
+padding-left: 15%;}
+#skills ul{list-style:square;}
+footer{height: 180px;}
