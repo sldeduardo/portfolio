@@ -6,7 +6,7 @@
 body{background-color: #28334a;
   color: rgb(232 229 226);
   font-family:"Suisseintl" , sans-serif;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 1.3s;
 }
 
 #header{list-style: none;
@@ -128,3 +128,12 @@ footer ul p{padding-right: 10px;}
 .next {
   right: 10px;
 }
+#theme{border: none;
+width: 115px;}
+
+body.light {
+  background-color: rgb(232 229 226);
+  color: #28334a;
+}
+img{border-radius: 5px;}
+button.light{color: #28334a;}
