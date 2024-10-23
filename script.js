@@ -43,3 +43,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     carouselInner.style.display = "flex";
 });
+const toggleButton = document.getElementById('theme');
+const body = document.body;
+
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('light');
+});
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
