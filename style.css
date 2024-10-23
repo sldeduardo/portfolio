@@ -5,7 +5,9 @@
 }
 body{background-color: #28334a;
   color: rgb(232 229 226);
-  font-family:"Suisseintl" , sans-serif;}
+  font-family:"Suisseintl" , sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
 
 #header{list-style: none;
     width: 100%;
@@ -40,20 +42,18 @@ flex-direction: row;
 justify-content: center;
 padding-top: 100px;
 gap: 180px;
+width: 100%;
 }
 #lflex img{width: 300px;}
-#contactsvg svg{height: 40px;
+svg{height: 40px;
 fill: rgb(255 201 0);}
 .snametree{font-size: 1.6em;
 font-weight: 600;}
-#projects ul{list-style: none;}
 #projects a{color: rgb(255 201 0);}
-#projects{text-align: center;}
 #contact{text-align: center;
 padding-top: 300px;}
 .yellowtext{margin-top: 70px;}
 #contactsvg ul{display: flex;
-text-align: center;
 list-style: none;
 justify-content: center;
 gap: 50px;}
@@ -65,8 +65,66 @@ width: 130px;
 border-radius: 13px;
 background-color:rgb(255 201 0);
 border: none;}
-#skills {padding-left: 15%;}
+#skills {padding-left: 15%;
+margin-top: 70px;}
 form{text-align: left;
 padding-left: 15%;}
 #skills ul{list-style:square;}
-footer{height: 180px;}
+footer{height: 150px;
+margin-top: 120px;
+background-color:rgba(0, 0, 0, 0.3) ;}
+footer ul{text-align: center;
+display: flex;
+list-style: none;
+justify-content: space-around;
+color:rgba(0, 0, 0, 0.4) ;}
+footer ul svg:hover{fill:rgba(0, 0, 0, 0.4);
+transition: 0.2s;}
+footer ul svg{fill: rgb(120, 94, 0);}
+footer ul p{padding-right: 10px;}
+#projects {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(120, 94, 0);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 70px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;}
+
+#carousel {
+  position: relative;
+  overflow: hidden;
+  height: 120px;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  width: 90px;
+  color:#28334a ;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
