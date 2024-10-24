@@ -129,7 +129,8 @@ footer ul p{padding-right: 10px;}
   right: 10px;
 }
 #theme{border: none;
-width: 115px;}
+width: 115px;
+cursor: pointer;}
 
 body.light {
   background-color: rgb(232 229 226);
